@@ -14,7 +14,7 @@ public class getSessionId {
 		Response resp = get("https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/pricing/uk2/v1.0/ee9925d6-2327-4c60-ae5f-e6258f685b84");
 		int code = resp.getStatusCode();
 		System.out.println("Status code is "+code);
-		Assert.assertEquals(code, 401);
+		Assert.assertEquals(code, 200);
 	}
 	
 	@Test
