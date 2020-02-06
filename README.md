@@ -10,7 +10,7 @@ Required packages and basic setup is done.
 ## Tech Stack
 1) Java 1.8
 2) TestNG
-3) ResstAssured
+3) Rest-Assured
 4) Maven
 5) Maven Sure Fire plugin
 
