@@ -19,7 +19,7 @@ public class getAndValidateFlightSearchResults {
 		RequestSpecification request = RestAssured.given();
 		request		
 		.header("x-rapidapi-host", "skyscanner-skyscanner-flight-search-v1.p.rapidapi.com")
-		.header("x-rapidapi-key", "cbba553789msh9398ee7c7cc7163p1cb8fajsn1d3dc0d1a3bf");
+		.header("x-rapidapi-key", "204b58b3d4msh2aacc77507c4458p1fb109jsn08b5fa93531a");
 		
 		Response response = request.get("https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/pricing/uk2/v1.0/"+sessionId);
 		

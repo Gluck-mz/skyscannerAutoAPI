@@ -2,25 +2,19 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="3492" started-at="2020-02-04T13:20:44Z" finished-at="2020-02-04T13:20:48Z">
+  <suite name="Default suite" duration-ms="24759" started-at="2020-02-06T02:17:04Z" finished-at="2020-02-06T02:17:29Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="3492" started-at="2020-02-04T13:20:44Z" finished-at="2020-02-04T13:20:48Z">
-      <class name="getFlightResults.postSessionId">
-        <test-method status="FAIL" signature="getId()[pri:0, instance:getFlightResults.postSessionId@7ac7a4e4]" name="getId" duration-ms="3450" started-at="2020-02-05T00:20:44Z" finished-at="2020-02-05T00:20:47Z">
-          <exception class="java.lang.AssertionError">
+    <test name="Default test" duration-ms="24759" started-at="2020-02-06T02:17:04Z" finished-at="2020-02-06T02:17:29Z">
+      <class name="getFlightResults.getAndValidateFlightSearchResults">
+        <test-method status="FAIL" signature="testResponsecode()[pri:0, instance:getFlightResults.getAndValidateFlightSearchResults@5ae9a829]" name="testResponsecode" duration-ms="24725" started-at="2020-02-06T13:17:04Z" finished-at="2020-02-06T13:17:29Z">
+          <exception class="java.lang.ClassCastException">
             <message>
-              <![CDATA[expected [201] but found [415]]]>
+              <![CDATA[java.util.LinkedHashMap cannot be cast to java.lang.String]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [201] but found [415]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
-	at org.testng.Assert.assertEquals(Assert.java:116)
-	at org.testng.Assert.assertEquals(Assert.java:389)
-	at org.testng.Assert.assertEquals(Assert.java:399)
-	at getFlightResults.postSessionId.getId(postSessionId.java:38)
+              <![CDATA[java.lang.ClassCastException: java.util.LinkedHashMap cannot be cast to java.lang.String
+	at getFlightResults.getAndValidateFlightSearchResults.testResponsecode(getAndValidateFlightSearchResults.java:38)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -48,11 +42,11 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- java.lang.ClassCastException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getId -->
-      </class> <!-- getFlightResults.postSessionId -->
+        </test-method> <!-- testResponsecode -->
+      </class> <!-- getFlightResults.getAndValidateFlightSearchResults -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

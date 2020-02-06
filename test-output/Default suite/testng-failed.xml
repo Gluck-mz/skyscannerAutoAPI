@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="getFlightResults.postSessionId">
+      <class name="getFlightResults.getAndValidateFlightSearchResults">
         <methods>
-          <include name="getId"/>
+          <include name="testResponsecode"/>
         </methods>
-      </class> <!-- getFlightResults.postSessionId -->
+      </class> <!-- getFlightResults.getAndValidateFlightSearchResults -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

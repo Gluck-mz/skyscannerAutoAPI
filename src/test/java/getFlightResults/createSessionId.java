@@ -13,18 +13,21 @@ public class createSessionId {
 		
 	public String returnSessionId()
 	{
-		RequestSpecification request = RestAssured.given().log().all().config(RestAssured.config()
+		/*RequestSpecification request = RestAssured.given().log().all().config(RestAssured.config()
 			     .encoderConfig(EncoderConfig.encoderConfig()
 			     .encodeContentTypeAs("x-www-form-urlencoded",
 			     ContentType.URLENC)))
-				.contentType("application/x-www-form-urlencoded; charset=UTF-8");
+				.contentType("application/x-www-form-urlencoded; charset=UTF-8");*/
 				
+		RequestSpecification request = RestAssured.given();
+		
 		request
 		.header("x-rapidapi-host", "skyscanner-skyscanner-flight-search-v1.p.rapidapi.com")
-		.header("x-rapidapi-key", "cbba553789msh9398ee7c7cc7163p1cb8fajsn1d3dc0d1a3bf");
-								
+		.header("x-rapidapi-key", "204b58b3d4msh2aacc77507c4458p1fb109jsn08b5fa93531a")
+		.header("Content-Type", "application/x-www-form-urlencoded");
+		
 		request
-		.formParam("inboundDate", "2020-04-20")
+		.formParam("inboundDate", "2020-07-20")
 		.formParam("cabinClass", "business")
 		.formParam("children", "0")
 		.formParam("infants", "0")
@@ -33,7 +36,7 @@ public class createSessionId {
 		.formParam("locale", "en-AU")
 		.formParam("originPlace", "MEL-sky")
 		.formParam("destinationPlace", "SYD-sky")
-		.formParam("outboundDate", "2020-03-20")
+		.formParam("outboundDate", "2020-06-20")
 		.formParam("adults", "1");	
 		
 		Response response = request.request().post("https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/pricing/v1.0");
